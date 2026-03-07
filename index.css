@@ -1,0 +1,67 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* ====== Navbar ====== */
+.navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    padding: 15px 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: rgba(0, 0, 0, 0.4);
+    z-index: 10;
+}
+
+.navbar h2 {
+    color: white;
+}
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+    margin-left: 20px;
+    font-size: 15px;
+}
+
+.navbar a:hover {
+    text-decoration: underline;
+}
+
+/* ====== Hero Section ====== */
+.hero {
+    height: 100vh;
+    background-image: url("images/eloud8.jpg"); /* تأكدي من المسار */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+/* بدون بطاقة ❌ */
+.hero-content {
+    background: none;
+}
+
+/* الكتابة */
+.hero-content h1 {
+    color: white;
+    font-size: 52px;
+    text-shadow: 0 4px 10px rgba(0,0,0,0.8);
+}
+
+.hero-content p {
+    color: #f1f1f1;
+    font-size: 22px;
+    margin-top: 15px;
+    text-shadow: 0 3px 8px rgba(0,0,0,0.8);
+}
