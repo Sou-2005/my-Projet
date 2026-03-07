@@ -162,5 +162,6 @@ lightbox.addEventListener('click', () => {
     lightbox.style.display = 'none';
 });
 </script>
+
 </body>
 </html>

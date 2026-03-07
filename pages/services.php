@@ -165,5 +165,8 @@ lightbox.addEventListener('click', () => {
     lightbox.style.display = 'none';
 });
 </script>
+<footer class="footer">
+    <p>© 2026 مشروع سياحي لولاية وادي سوف</p>
+</footer>
 </body>
 </html>
