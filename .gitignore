@@ -1,0 +1,19 @@
+# IDEs
+.vscode/
+.idea/
+*.iml
+
+# System files
+.DS_Store
+Thumbs.db
+
+# Build / temp
+/build/
+/bin/
+/obj/
+/*.log
+*.tmp
+
+# Others
+*.exe
+*.apk

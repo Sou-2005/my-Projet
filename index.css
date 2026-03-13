@@ -65,3 +65,66 @@
     margin-top: 15px;
     text-shadow: 0 3px 8px rgba(0,0,0,0.8);
 }
+/* الزر الهامبرغر */
+.hamburger {
+    font-size: 30px;
+    cursor: pointer;
+    position: fixed;
+    top: 15px;
+    right: 20px;
+    z-index: 1001;
+    color: #2563eb;
+}
+
+/* الشريط الجانبي */
+.sidebar {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    top: 0;
+    right: 0; /* يظهر من اليمين */
+    background-color: #111;
+    overflow-x: hidden;
+    transition: 0.4s;
+    padding-top: 60px;
+    z-index: 1000;
+    color: white;
+}
+
+.sidebar-header {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    background-color: #2563eb;
+    padding: 20px;
+    text-align: center;
+}
+
+.close-btn {
+    position: absolute;
+    top: 10px;
+    left: 20px;
+    font-size: 30px;
+    cursor: pointer;
+}
+
+.sidebar-nav {
+    display: flex;
+    flex-direction: column;
+    margin-top: 50px;
+    padding-left: 20px;
+}
+
+.sidebar-nav a {
+    padding: 15px 20px;
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    border-bottom: 1px solid rgba(255,255,255,0.1);
+    transition: 0.2s;
+}
+
+.sidebar-nav a:hover {
+    background-color: #2563eb;
+    border-radius: 5px;
+}

@@ -1,0 +1,84 @@
+body{
+
+font-family:Arial;
+margin:0;
+background:#f4f4f4;
+
+}
+
+/* زر القائمة */
+
+.menu-btn{
+
+font-size:25px;
+padding:10px;
+cursor:pointer;
+
+}
+
+/* الشريط الجانبي */
+
+.sidebar{
+
+position:fixed;
+left:-250px;
+top:0;
+width:250px;
+height:100%;
+background:#1e293b;
+color:white;
+padding:20px;
+transition:0.3s;
+
+}
+
+.sidebar.active{
+
+left:0;
+
+}
+
+.sidebar a{
+
+display:block;
+color:white;
+padding:10px;
+text-decoration:none;
+margin-top:10px;
+
+}
+
+.sidebar a:hover{
+
+background:#334155;
+
+}
+
+/* المحتوى */
+
+.content{
+
+margin-left:20px;
+padding:20px;
+
+}
+
+/* البطاقات */
+
+.cards{
+
+display:flex;
+gap:20px;
+
+}
+
+.card{
+
+background:white;
+padding:20px;
+border-radius:10px;
+box-shadow:0 0 10px rgba(0,0,0,0.1);
+width:200px;
+text-align:center;
+
+}

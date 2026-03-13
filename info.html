@@ -1,21 +1,20 @@
 <!DOCTYPE html>
-<html lang="ar">
+<html lang="ar" dir="rtl">
 <head>
     <meta charset="UTF-8">
     <title>معلومات عامة - وادي سوف</title>
     <link rel="stylesheet" href="info.css">
 </head>
-<body>
+<body dir="rtl">
 
 <!-- Navbar -->
 <header class="navbar">
     <h2>Oued Souf</h2>
     <nav>
-        <a href="info.html" class="active">معلومات عامة</a>
         <a href="index.php">الرئيسية</a>
-    <a href="heritage.html">الموروث الثقافي</a>
-    <a href="pages/places.php">أماكن سياحية</a>
-    <a href="pages/services.php">خدمات سياحية</a>
+        <a href="pages/heritage.php">الموروث الثقافي</a>
+        <a href="pages/places.php">أماكن سياحية</a>
+        <a href="pages/services.php">خدمات سياحية</a>
     </nav>
 </header>
 
@@ -65,6 +64,39 @@
             <img id="lightbox-img">
         </div>
     </section>
-    <footer class="footer">
-        <p>© 2026 مشروع سياحي لولاية وادي سوف</p>
-    </footer>
+  
+ </body>
+</div>
+<script>
+    function openImage(src) {
+        document.getElementById('lightbox-img').src = src;
+        document.getElementById('lightbox').style.display = 'block';
+    }
+
+    function closeImage() {
+        document.getElementById('lightbox').style.display = 'none';
+    }
+    const hamburger = document.getElementById("hamburger");
+const sidebar = document.getElementById("sidebar");
+const closeBtn = document.getElementById("closeBtn");
+
+hamburger.addEventListener("click", () => {
+    sidebar.style.width = "250px";
+});
+
+closeBtn.addEventListener("click", () => {
+    sidebar.style.width = "0";
+});
+
+// إغلاق الشريط عند النقر في أي مكان خارج الشريط
+window.addEventListener("click", (e) => {
+    if (e.target !== sidebar && e.target !== hamburger && !sidebar.contains(e.target)) {
+        sidebar.style.width = "0";
+    }
+});
+</script>
+</html>  
+</script>
+</html>
+
+
